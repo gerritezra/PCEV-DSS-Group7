@@ -17,9 +17,9 @@ Pillow==9.1.1
 pyparsing==3.0.9
 python-dateutil==2.8.2
 pytz==2022.1
-scikit-learn==1.1.1
-scipy==1.8.1
-seaborn==0.11.2
+scikit-learn
+scipy
+seaborn
 six==1.16.0
 threadpoolctl==3.1.0
 Werkzeug==2.1.2
