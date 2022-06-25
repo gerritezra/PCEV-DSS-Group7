@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html prefix="og: http://ogp.me/ns#" lang="en" style="height: 100%">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html" charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=5" />
+
+  <title>pcev</title>
+  <meta name="description" content="pcev Description">
+  <meta property="og:title" content="pcev">
+  <meta property="og:description" content="pcev Description">
+  <meta name="generator" content="Quest">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:900">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:500,900">
+  <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    
+  <script src= {{ url_for("static",filename="index/index.js") }} ></script>
+      
+</head>
+
+    <body class="websiteBody">
+      <div class="Page-outer">
+    <div id="Page" data-name="Page" class="Page">
+      <div class="Ellipse-1">
+        <img
+          id="Ellipse-1"
+          data-name="Ellipse 1"
+          alt="Ellipse 1"
+          class="Ellipse-1"
+        />
+        </div>
+
+        <div class="Ellipse-2">
+          <img
+            id="Ellipse-2"
+            data-name="Ellipse 2"
+            alt="Ellipse 2"
+            class="Ellipse-2"
+          />
+          </div>
+    </div>
+        </div>
+        </div>
+        <div class="title">
+          <div
+            id="PCEV-1"
+            data-name="PCEV"
+            class="PCEV-1"
+          ><div key="0">PCEV</div>
+          </div>
+        </div>
+        <div class="subtitle">
+          <div
+            id="Predict-CO2-Emission-1"
+            data-name="Predict CO2 Emission of Vehicles"
+            class="Predict-CO2-Emission-1"
+          ><div key="0">Predict CO2 Emission of Vehicles</div>
+          </div>
+        </div>
+
+        <form class="box" action="{{url_for('predict')}}" method="post">
+          <input type="text" id="EngineSize" name="Engine-Size" placeholder="Engine Size"><br><br>
+          <input type="text" id="Cylinders" name="Cylinders" placeholder="Cylinders"><br><br>
+          <input type="text" id="Transmission" name="Transmission", placeholder="1 for manual 0 for Automatic"><br><br>
+          <input type="text" id="Fuel" name="Fuel", placeholder="Fuel"><br><br>
+
+          
+          
+          <input type="submit" value="Submit">
+        </form>
+        <div class="result-containter">
+          <div class="result">
+            {{ prediction_text }} <br>
+            {{saran}}
+          </div>
+
+        </div>
+        
+        </div>
+
+   
+  </div>
+  </div>
+
+    </body>
+  </html>
