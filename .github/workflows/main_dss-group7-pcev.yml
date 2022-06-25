@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'dss-group7-PCEV'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D2C01EC920B940E683DF7A838EFA16E2 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_78AD704696A844449C46C57946AC987B }}
