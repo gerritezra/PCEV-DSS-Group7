@@ -81,7 +81,7 @@ python main.py                    # http://127.0.0.1:5000
 
 Form inputs, in order: engine size (L), cylinders, transmission (1 = manual, 0 = automatic), combined fuel consumption (mpg).
 
-The `Procfile` runs `gunicorn app:app`, but the Flask app lives in `main.py`. To serve it with Gunicorn, use:
+To serve it with Gunicorn (as the `Procfile` does on Heroku):
 
 ```bash
 gunicorn main:app
